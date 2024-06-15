@@ -1,0 +1,65 @@
+#contact-us {
+    background: var(--color2-75);
+}
+/* #################### Section 1 #################### */
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 0.5fr 4fr 0.5fr;
+    gap: 1.25em;
+}
+.section1 form {
+    grid-area: 2 / 2 / 1 span / 6 span;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 1.25em;
+    background: var(--color2-75);
+    padding: 0.75em;
+    border-radius: 1em;
+}
+.section1 form input {
+    border: none;
+    padding: 0.75em;
+    border-radius: 0.5em;
+    font-size: 1.25em;
+}
+.section1 form textarea {
+    grid-area: 2 / 1 / 1 span / 2 span;
+    width: 100%;
+    padding: 0.75em;
+    border-radius: 0.5em;
+    font-size: 1.25em;
+}
+.section1 form textarea:placeholder-shown {
+    font-size: 1.5em;
+}
+.section1 .map {
+    grid-area: 2 / 8 / 1 span / 4 span;
+}
+.section1 .map iframe {
+    width: 100%;
+}
+/* #################### Section 2 #################### */
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 1.25em;
+    color: var(--color1);
+}
+.section2 .info-wraper1 {
+    grid-area: 2 / 2 / 1 span / 10 span;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, var(--color2-75), var(--color2-30));
+    padding: 2em;
+    gap: 1.25em;
+}
+.section2 .info-wraper1 .info-wraper2 {
+    display: flex;
+    gap: 0.5em;
+    font-size: 1.25em;
+}

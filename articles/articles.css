@@ -1,0 +1,60 @@
+#articles {
+    background: var(--color2-75);
+}
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 0.5fr 1fr auto 0.5fr;
+    gap: 1.25em;
+    color: var(--color2);
+}
+.section1 .info-wraper1 {
+    grid-area: 2 / 2 / 1 span / 10 span;
+    text-align: center;
+}
+.section1 .info-wraper1 h1 {
+    font-size: 4em;
+}
+.section1 .info-wraper1 h3 {
+    font-size: 2.5em;
+}
+.section1 .info-wraper2 {
+    grid-area: 3 / 2 / 1 span / 10 span;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+}
+.section1 .info-wraper2 .info-wraper3 {
+    display: grid;
+    grid-template-rows: 2.5fr 1fr auto;
+    gap: 1.25em;
+    background: var(--color2);
+    color: var(--color1);
+    padding: 1em 1em 2em 1em;
+}
+.section1 .info-wraper2 .info-wraper3 .img-wraper1 {
+    background: url(../images/778888e7e22f4e7ca39a006583a28d4b.png_tplv-6bxrjdptv7-image-removebg-preview.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border: 0.25em solid var(--color1-75);
+    border-radius: 1em;
+    cursor: pointer;
+}
+.section1 .info-wraper2 .info-wraper3 .img-wraper1:hover {
+    transition: 0.25s ease-in;
+    background-blend-mode: color;
+    background-color: var(--color1-30);
+    backdrop-filter: blur(2em);
+}
+.section1 .info-wraper2 .info-wraper3 button {
+    width: fit-content;
+    font-size: 1.5em;
+    padding: 0.625em 1.25em;
+    background: var(--color1-75);
+    color: var(--color2);
+    border: none;
+    cursor: pointer;
+}
+.section1 .info-wraper2 .info-wraper3 button:hover {
+    animation: hover 0.25s ease-in-out both alternate;
+}
