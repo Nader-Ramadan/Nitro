@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
   --color1: rgba(255, 255, 255, 100%);
@@ -109,6 +110,7 @@ footer {
   color: var(--color1);
   background: var(--color2);
 }
+
 footer .info-wraper1 {
   grid-area: 2 / 2 / 1 span / 3 span;
   display: flex;
@@ -220,7 +222,18 @@ footer .info-wraper3 .logo {
     box-shadow: 0.25em 0.25em 0.1em var(--color1);
   }
 }
-
+@keyframes show {
+  from {
+    transform: rotatey(90deg);
+    opacity: 0.8;
+    scale: 0.8 1;
+  }
+  50% {
+    opacity: 1;
+    scale: 1;
+    transform: rotatey(0deg);
+  }
+}
 @media screen and (max-width: 1440px) {
   body {
     font-size: 14px;

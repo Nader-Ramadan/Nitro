@@ -102,6 +102,9 @@
   background: var(--color3);
   padding: 0.5em 0.5em 1em 0.5em;
   border-radius: 1em;
+  animation: show forwards ease-in;
+  animation-timeline: view();
+  animation-range: cover contain;
 }
 .section1 .shopping-wraper .items .item {
   display: grid;
